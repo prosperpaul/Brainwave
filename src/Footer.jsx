@@ -1,5 +1,5 @@
 
-import Section from './components/section'
+import Section from './components/Section'
 import { socials } from './constants'
 
 const Footer = () => {

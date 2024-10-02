@@ -4,7 +4,7 @@ import Heading from "./Heading";
 import Arrow from '../assets/svg/Arrow';
 import { GradientLight } from "./design/Benefits";
 import ClipPath from '../assets/svg/ClipPath';
-import Section from "./section";
+import Section from "./Section";
 
 
 
