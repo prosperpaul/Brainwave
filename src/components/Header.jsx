@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import { brainwave } from '../assets';
 import {navigation} from '../constants/index';
 import Button from './Button';
@@ -17,10 +17,10 @@ const Header = () => {
     const toggleNavigation = () => {
         if (openNavigation) {
             setOpenNavigation(false);
-            enablePageScroll()
+            enableBodyScroll()
         }else {
             setOpenNavigation(true);
-            disablePageScroll();
+            disableBodyScroll();
 
         }
     };
@@ -28,7 +28,7 @@ const Header = () => {
     const handleClick= () => {
         if( ! openNavigation) return;
 
-        enablePageScroll();
+        enableBodyScroll();
         setOpenNavigation(false);
     };
 
